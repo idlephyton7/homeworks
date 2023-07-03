@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 500vh;
+    background-color: #fbfbfd;
+}
+:root{
+    --hover: #fff;
+    --bg: #434344;
+    --item__color: #ddd;
+    --ipad__color: linear-gradient(violet, gold, orange);
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+.nav__collection{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-family: sans-serif;
+}
+.nav__item:first-child a{
+    font-size: 20px;
+}
+.nav__item a:hover{
+    cursor: pointer;
+    color: var(--hover);
+}
+.nav__item a{
+    color: var(--item__color);
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav__item:nth-child(2){
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fbfbfd;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.container__text{
+    width: 30%;
+    height: 300px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+}
+.container__text ul{
+    list-style: none;
+}
+.container__text ul li:first-child{
+        color: rgb(255, 98, 0);
+
+    font-size: 18px;
+}
+.container__text li:nth-child(2){
+    font-size: 40px;
+    font-weight: 700;
+}
+.container__text button{
+    padding: 5px 15px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    transition: .5s;
+}
+.container__text li button:hover{
+    box-shadow: 0 0 4px 2px dodgerblue;
+    background-color: #fbfbfd;
+    color: dodgerblue;
+}
+.container__text li:last-child{
+    color: dodgerblue;
+    padding-top: 5px;
+}
+.container__img{
+    text-align: center;
+}
+.for__myself{
+    width: 100px;
+    height: 100px;
+    padding: 15px 50px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 50%;
+    /* outline: 2px solid yellowgreen; */
+    z-index: 11;
+}
+.for__myself img{
+    border: 3px solid rgba(25, 141, 25, 0.879);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+}
+.myself__adv{
+    padding: 2px 4px;
+    position: absolute;
+    z-index: 13;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+    font-size: 10px;
+    top: 0;
+}
+.ipad__cards{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.pad{
+    background-color: #000;
+    height: 80px;
+}
+.ipad__card:last-child,
+.ipad__card:first-child{
+    width: 35%;
+    height: 500px;
+}
+.ipad__card:nth-child(2){
+    width: 30%;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.ipad__card img{
+    width: 100%;
+    height: 100%;
+}
+.ipad__card:nth-child(2) h1{
+    font-size: 50px;
+    padding-top: 20px;
+}
+.ipad__video__circle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid dodgerblue;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ipad__card a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.ipad__video__circle{
+    position: absolute;
+    left: 54%;
+    top: 67.5%;
+}
+.black__iphone{
+    background-color: #000;
+}
+.iphone{
+    background-color: transparent;
+}
+.black{
+    background-color: #000;
+    color: white;
+}
+.iphone__img{
+    width: 800px;
+    height: 500px;
+    margin-top: -50px;
+}
+.black__img{
+    width: 800px;
+    height: 403px;
+}
+.ipad__container{
+    width: 100%;
+    height: 200vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.ipad{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
+.watch__background{
+    background: #f5f5f7;
+    height: 150vh;
+}
+.m2{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-top: 20px;
+    text-align: center;
+}
+.watch ul li:first-child{
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+}
+.watch ul li:nth-child(2){
+        color: rgb(255, 98, 0);
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.watch ul li:nth-child(3) h2{
+    font-size: 40px;
+}
+.watch ul li:nth-child(4){
+    font-weight: 700;
+    font-size: 20px;
+}
+.watch ul li:last-child{
+    font-size: 18px;
+}
+.watch__background .container__img img{
+    width: 90vw;
+    height: 90vh;
+    
+}
+.watch__black{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.watch__black .ipad{
+    top: 25%;
+    left: 35%;
+}
+.watch__black ul li:first-child{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+.watch__black ul li:nth-child(2){
+    color: red;
+    font-size: 18px;
+}
+.watch__black ul li:nth-child(3){
+    font-size: 30px;
+}
+.watch__img{
+    width: 350px;
+    height: 700px;
+    margin-left: 400px;
+}
+.airpods__card{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    margin-top: 60px;
+    position: relative;
+}
+.airpods__card img{
+    width: 100%;
+    height: 100%;
+}
+.airpods__text{
+    position: absolute;
+    left: 35%;
+    top: 33%;
+    text-align: center;
+}
+.airpods__text h1{
+    font-size: 120px;
+}
+.airpods__text h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.airpods__text h2{
+    font-weight: 100;
+}
+.airpods__button{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    display: flex;
+    gap: 30px;
+}
+.airpods__button button{
+    padding: 10px 25px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    transition: .5s;
+    border-radius: 25px;
+}
+.airpods__button p{
+    font-size: 20px;
+    padding-top: 5px;
+    color: dodgerblue;
+    transition: 2s;
+}
+.airpods__button p:hover{
+    text-decoration: underline;
+}
+.airpods__button button:hover{
+    box-shadow: 0 0 8px 4px dodgerblue;
+    background-color: #fff;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.vision{
+    height: 100vh;
+    background-color: #fafafa;
+}
+.vision ul li:first-child{
+    font-size: 50px;
+    color: #000;
+    font-weight: 700;
+    gap: 10px;
+}
+.iphone .fa-play{
+    padding: 2px 3px;
+    border: 10px solid #fff;
+    outline: 2px solid orange;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.vision ul li:nth-child(2){
+    color: rgb(255, 98, 0);
+}
+.vision__order{
+    padding: 10px 20px;
+    border: 3px solid #000;
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 37%;
+    margin-top: 50px;
+    transition: .5s;
+}
+.vision__order:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.tvhome__container{
+    width: 100%;
+    height: 150vh;
+    background: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.tvhome__container img{
+    width: 50%;
+    height: 500px;
+    transform: translateY(200px);
+    z-index: 2;
+}
+.tvhome__text{
+    font-size: 100px;
+    text-align: center;
+    margin-top: -350px;
+    margin-left: 250px;
+    position: absolute;
+}
+.tvhome{
+    z-index: 10;
+}
+.tvhome__about{
+    position: absolute;
+    color: #86868b;
+    margin-top: -200px;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+}
+.entertainment__box{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    margin-top: 50px;
+    position: relative;
+}
+.enter__box{
+    background-color: #000;
+}   
+.enter__text{
+    font-family: sans-serif;
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+.entertainment__box h2{
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.enter__footer{
+    width: 100%;
+    height: 100px;
+    background-color: #313132;
+    position: absolute;
+    bottom: 0;
+}
+.enter__footer ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    color: #fff;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+.enter__footer ul button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+.enter__footer ul button:hover{
+    box-shadow: 0 0 4px 2px white;
+}
+
+
